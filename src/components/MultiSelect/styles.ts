@@ -9,14 +9,14 @@ export const styles = StyleSheet.create({
     backgroundColor: 'white',
     borderWidth: 0.5,
     borderColor: '#EEEEEE',
-    shadowColor: '#000',
-    shadowOffset: {
-      width: 0,
-      height: 1,
-    },
-    shadowOpacity: 0.2,
-    shadowRadius: 1.41,
-    elevation: 2,
+    // shadowColor: '#000',
+    // shadowOffset: {
+    //   width: 0,
+    //   height: 1,
+    // },
+    // shadowOpacity: 0.2,
+    // shadowRadius: 1.41,
+    // elevation: 2,
   },
   flex1: {
     flex: 1,
@@ -95,9 +95,5 @@ export const styles = StyleSheet.create({
     fontSize: 12,
     color: 'gray',
     writingDirection: I18nManager.isRTL ? 'rtl' : 'ltr',
-  },
-  fullScreen: {
-    alignItems: 'center',
-    justifyContent: 'center',
   },
 });

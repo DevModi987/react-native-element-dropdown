@@ -1,4 +1,4 @@
-import { I18nManager, StyleSheet } from 'react-native';
+import { I18nManager, StyleSheet,Platform } from 'react-native';
 
 export const styles = StyleSheet.create({
   mainWrap: {
@@ -9,14 +9,14 @@ export const styles = StyleSheet.create({
     borderWidth: 0.5,
     borderColor: '#EEEEEE',
     backgroundColor: 'white',
-    shadowColor: '#000',
-    shadowOffset: {
-      width: 0,
-      height: 1,
-    },
-    shadowOpacity: 0.2,
-    shadowRadius: 1.41,
-    elevation: 2,
+    // shadowColor: '#000',
+    // shadowOffset: {
+    //   width: 0,
+    //   height: 1,
+    // },
+    // shadowOpacity: 0.2,
+    // shadowRadius: 1.41,
+    // elevation: 2,
   },
   flex1: {
     flex: 1,
@@ -39,10 +39,12 @@ export const styles = StyleSheet.create({
     writingDirection: I18nManager.isRTL ? 'rtl' : 'ltr',
   },
   item: {
-    padding: 17,
+    height:35,
+    //padding: 5,
+    marginLeft:Platform.OS === 'ios'? 10 : 5,
     flexDirection: I18nManager.isRTL ? 'row-reverse' : 'row',
     justifyContent: 'space-between',
-    alignItems: 'center',
+    alignItems: 'center',    
   },
   textItem: {
     flex: 1,
@@ -60,9 +62,5 @@ export const styles = StyleSheet.create({
     marginBottom: 8,
     margin: 6,
     height: 45,
-  },
-  fullScreen: {
-    alignItems: 'center',
-    justifyContent: 'center',
   },
 });
